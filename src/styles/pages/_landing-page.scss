@@ -1,0 +1,123 @@
+.section{
+    background-color: #777;
+    // text-align: center;
+    width: 100%;
+}
+
+.section img{
+    width: 100%;    
+}
+
+
+.section-1{
+    background-color: #111;
+    height: 100vh;
+    display: table;
+    text-align: center;
+    padding: 0px 300px;
+    color: rgb(78, 78, 78);    
+}
+
+.section-1 .heading{
+    color: #930439;
+}
+
+.section-1 .content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-2{
+    background-color: #9d9088;
+    padding: 80px 150px;
+}
+
+.section-2 h1{
+    margin-top: 110px;
+}
+
+.section-3{
+    background-color: #3a3836;
+    padding: 80px 150px;
+    color: #fff;
+}
+
+.section-3 h1{
+    margin-top: 150px;    
+}
+
+.section-4{
+    background-color: #747b97;
+    padding: 80px 150px;
+    color: #fff;
+}
+
+.section-4 h1{
+    margin-top: 150px;    
+}
+
+.section-5{
+    background-color: #d13d8e;
+    padding: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-6{
+    background-color: #3dd1a5;
+    padding: 80px 150px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-6 .job-card{
+    background-color: #f4f4f4;
+    padding: 50px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.section-7{
+    background-color: #272727;
+    padding: 80px 150px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-7 .learning-path-card{
+    background-color: #f4f4f4;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.learning-path-card.c1{background-color: #3dd1a5}
+.learning-path-card.c2{background-color: #3d65d1}
+.learning-path-card.c3{background-color: #78d13d}
+.learning-path-card.c4{background-color: #af3dd1}
+.learning-path-card.c5{background-color: #b1d13d}
+.learning-path-card.c6{background-color: #d1853d}
+
+.section-8{
+    background-color: #c5c0c0;
+    padding: 80px 150px;
+    color: #333;
+    text-align: center;
+}
+
+.section-8 .apps-card{
+    background-color: #3937b1;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-9{
+    background-color: #1a1919;
+    padding: 150px;
+    color: #ddd;
+    text-align: center;
+}

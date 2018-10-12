@@ -15,7 +15,7 @@ class App extends Component {
         const {match, location} = this.props;
 
         if (location.pathname === '/') {
-            return ( <Redirect to={'/sample-page'}/> );
+            return ( <Redirect to={'/home'}/> );
         }
         return (
             <MuiThemeProvider theme={createMuiTheme(defaultTheme)}>

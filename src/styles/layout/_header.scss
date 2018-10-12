@@ -12,6 +12,10 @@
   //z-index: 1302 !important;
   background-color: $headerColor !important;
   color: $white !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 
   & .search-bar input {
     @include transition($transition-base);
@@ -328,4 +332,56 @@
   background: rgba(0, 0, 0, 0.7) !important;
   right: 0;
   top: 0;
+}
+
+// ===========================Side Menu Bar ========================
+
+.menu-bar{
+  background-color: #1b1b1b;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.menu-bar ul{
+  position: fixed;
+  left: 0;
+  top: 70px;
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+  background-color: #1b1b1b;  
+}
+
+.menu-bar ul li{
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  background-color: #1b1b1b;
+  border-bottom: 1px solid #180f1b;
+  text-align: center;
+  font-size: 11px;
+}
+
+.menu-bar ul li:last-child{
+  border-bottom: none;
+}
+
+.menu-bar ul li a{
+  display: grid;
+  padding: 18px 5px;
+  color: #ddd;
+  transition: .3s;
+}
+
+.menu-bar ul li a:hover{
+  background-color: #180f1b;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.menu-bar ul li a i{
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 8px;
 }

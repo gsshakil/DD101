@@ -4,9 +4,10 @@ import {connect} from 'react-redux';
 import {toggleCollapsedNav} from 'actions/index';
 
 import Header from 'components/Header/index';
+import MenuBar from 'components/MenuBar/index';
 import Sidebar from 'containers/SideNav/index';
 import Footer from 'components/Footer';
-import SamplePage from './routes/SamplePage';
+import LandingPage from './routes/LandingPage/index';
 import {isIOS, isMobile} from 'react-device-detect';
 
 import {COLLAPSED_DRAWER, FIXED_DRAWER} from 'constants/ActionTypes';
@@ -36,10 +37,12 @@ class App extends React.Component {
                     <div className="app-header">
                         <Header drawerType={drawerType} onToggleCollapsedNav={this.onToggleCollapsedNav}/>
                     </div>
-
+                    <div className="side-menu-bar">
+                        <MenuBar/>
+                    </div>
                     <main className="app-main-content-wrapper">
                         <div className="app-main-content">
-                            <Route path={`${match.url}sample-page`} component={SamplePage}/>
+                            <Route path={`${match.url}landing-page`} component={LandingPage}/>
                         </div>
                         <Footer/>
                     </main>
