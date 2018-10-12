@@ -1,24 +1,41 @@
 import React from 'react';
 import ContainerHeader from 'components/ContainerHeader/index';
+import intro from '../../../../public/intro.png';
 import projectShowcase from '../../../../public/projectShowcase.png';
+import creativePeople from '../../../../public/creativePeople.png';
+import creativeIndustry from '../../../../public/creativeIndustry.png';
+import product1 from '../../../../public/product1.png';
+import product2 from '../../../../public/product2.png';
+import product3 from '../../../../public/product3.png';
+import product4 from '../../../../public/product4.png';
+import product5 from '../../../../public/product5.png';
+import product6 from '../../../../public/product6.png';
+import product7 from '../../../../public/product7.png';
+import product8 from '../../../../public/product8.png';
 
 
 class LandingPage extends React.Component {
 
     render() {
+        var introStyle = {
+            backgroundImage: 'url(' + intro + ')',
+        };
         return (
             <div className="app-wrapper">
-                <div className="section section-1">
+                <div className="section section-1" style={introStyle}>
                     <div className="content">
                         <h1 className="heading">Welcome to Deepden</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum quasi corporis neque similique sapiente molestias mollitia? Atque perspiciatis numquam iste, eos omnis quidem beatae pariatur tempore ipsum ex mollitia.</p>
+                        <p className="m-b-sm">Deepden is a platform for the creative professionals. A canvas to showcase creative works, products to global audience and meeting potential clients and customers. Deepden intends to create a thriving ecosystem for the global creative industry to develop skill, carrier, entrepreneurship, business and network.</p>
+                        
+                        <button className="btn btn-outline-info btn-lg">Learn More</button>                    
                     </div>
                 </div>
                 <div className="section section-2">
                     <div className="row">
                         <div className="col-md-4 ccp">
                         <div className="centered-content">
-                            <h1>Organize and Showcase Your Creative Projects Like Never Before</h1>    
+                            <h1 className="m-b-sm">Organize and Showcase Your Creative Projects Like Never Before</h1> 
+                            <button className="btn btn-outline-info btn-lg">Upload Works</button>                                                                       
                         </div>
                         </div>
                         <div className="col-md-8 ccp">
@@ -31,20 +48,23 @@ class LandingPage extends React.Component {
                 <div className="section section-3">
                     <div className="row">
                         <div className="col-md-8">
-                            <img src={projectShowcase} alt="Project Showcase"/>                        
+                            <img src={creativePeople} alt="Project Showcase"/>                        
                         </div>
                         <div className="col-md-4">
-                            <h1>Meet Creative Professionals</h1>
+                            <h1 className="m-b-sm">Meet Creative Professionals</h1>
+                            <button className="btn btn-outline-light btn-lg">Browse People</button>                    
+                            
                         </div>
                     </div>
                 </div>
                 <div className="section section-4">
                     <div className="row">
                         <div className="col-md-4">
-                            <h1>Connect with the Creative Industry</h1>
+                            <h1 className="m-b-sm">Connect with the Creative Industry</h1>
+                            <button className="btn btn-outline-info btn-lg">Browse Brands</button>                                                
                         </div>
                         <div className="col-md-8">
-                            <img src={projectShowcase} alt="Project Showcase"/>                                                
+                            <img src={creativeIndustry} alt="Project Showcase"/>                                                
                         </div>
                     </div>
                 </div>
@@ -52,82 +72,85 @@ class LandingPage extends React.Component {
                     <div className="row">
                         <div className="col-md-8 offset-md-2">
                             <h1>Explore and Shop from Creative Marketplace</h1>
-                            <h3 className="m-b-md">Trending Products</h3>
+                            <h3 className="m-b-md">TRENDING PRODUCTS</h3>
                             <div className="row m-b-sm">
                                 <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                    <img src={product1} alt="Product"/>                                                                            
                                 </div>
                                 <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                    <img src={product2} alt="Product"/>                                                                            
                                 </div>
                                 <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                    <img src={product3} alt="Product"/>                                                                            
                                 </div>
                                 <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                    <img src={product4} alt="Product"/>                                                                            
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                            <div className="row m-b-md">
+                                <div className="col-md-3 p-b-sm">
+                                    <img src={product5} alt="Product"/>                                                                            
                                 </div>
-                                <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                <div className="col-md-3 p-b-sm">
+                                    <img src={product6} alt="Product"/>                                                                            
                                 </div>
-                                <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                <div className="col-md-3 p-b-sm">
+                                    <img src={product7} alt="Product"/>                                                                            
                                 </div>
-                                <div className="col-md-3">
-                                    <img src={projectShowcase} alt="Project Showcase"/>                                                                            
+                                <div className="col-md-3 p-b-sm">
+                                    <img src={product8} alt="Product"/>                                                                            
                                 </div>
                             </div>
+                            <button className="btn btn-outline-light btn-lg">View All Products</button>                                                
                         </div>
                     </div>
                 </div>
                 <div className="section section-6">
                     <h1>Meet Potential Clients and Get Hired</h1>
                     <h3 className="m-b-md">TRENDING JOBS</h3>
-                    <div className="row">
+                    <div className="row m-b-md">
                         <div className="job-card m-b-xs"></div>
                         <div className="job-card m-b-xs"></div>
                         <div className="job-card m-b-xs"></div>
                         <div className="job-card m-b-xs"></div>
                         <div className="job-card m-b-xs"></div>
                     </div>
+                    <button className="btn btn-outline-light btn-lg">View All Jobs</button>                                                                    
                 </div>
                 <div className="section section-7">
-                    <h1>Havn't Done Any Works Yet?</h1>
-                    <h1>Relax!</h1>
-                    <h3>Deepden's Academy will Guide You Step by Step to Reach Your Dream Destination</h3>
-                    <h3>See Some of Our Learning Paths</h3>
+                    <h1>Havn't Done Any Works Yet? Relax!</h1>
+                    <h3 className="m-b-sm">Deepden's Academy will Guide You Step by Step to Reach Your Dream Destination</h3>
+                    <h2 className="m-b-md">SEE SOME OF THE LEARNING PATHS</h2>
                     <div className="row m-b-sm">
                         <div className="col-md-4 learning-path-card c1"></div>
                         <div className="col-md-4 learning-path-card c2"></div>
                         <div className="col-md-4 learning-path-card c3"></div>
                     </div>
-                    <div className="row">
+                    <div className="row m-b-md">
                         <div className="col-md-4 learning-path-card c4"></div>
                         <div className="col-md-4 learning-path-card c5"></div>
                         <div className="col-md-4 learning-path-card c6"></div>
                     </div>
-                    
+                    <button className="btn btn-outline-info btn-lg">See All Learning Paths, Courses and Preperation Test</button>                                                                    
                 </div>
                 <div className="section section-8">
                     <h1>....and there are lots of tools made by people like you to boost your professional carrier</h1>
-                    <h2 className="m-b-sm">Discover APPS</h2>
+                    <h2 className="m-b-sm">Discover Add-ons</h2>
                     <div className="row m-b-sm">
                         <div className="col-md-4 apps-card"></div>
                         <div className="col-md-4 apps-card"></div>
                         <div className="col-md-4 apps-card"></div>
                     </div>
-                    <div className="row">
+                    <div className="row m-b-md">
                         <div className="col-md-4 apps-card"></div>
                         <div className="col-md-4 apps-card"></div>
                         <div className="col-md-4 apps-card"></div>
                     </div>
+                    <button className="btn btn-outline-info btn-lg">View All Add-ons</button>                                                                    
                 </div>
                 <div className="section section-9">
-                    <h1>Build Your Brand New Identity</h1>
+                    <h1 className="m-b-sm">Build Your Brand New Identity</h1>
+                    <button className="btn btn-outline-secondary btn-lg">Join Now</button>                                        
                 </div>
             </div>
         );
