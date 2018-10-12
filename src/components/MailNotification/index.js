@@ -7,7 +7,7 @@ const MailNotification = () => {
     return (
         <div className="messages-list profile-menu">
             <div className="d-flex align-items-center h-100 justify-content-center">
-                Profile-menu
+                Msseages
             </div>
         </div>
     )

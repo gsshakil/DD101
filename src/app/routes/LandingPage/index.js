@@ -12,6 +12,7 @@ import product5 from '../../../../public/product5.png';
 import product6 from '../../../../public/product6.png';
 import product7 from '../../../../public/product7.png';
 import product8 from '../../../../public/product8.png';
+import endsec from '../../../../public/endsec.png';
 
 
 class LandingPage extends React.Component {
@@ -19,6 +20,9 @@ class LandingPage extends React.Component {
     render() {
         var introStyle = {
             backgroundImage: 'url(' + intro + ')',
+        };
+        var outroStyle = {
+            backgroundImage: 'url(' + endsec + ')',
         };
         return (
             <div className="app-wrapper">
@@ -71,8 +75,8 @@ class LandingPage extends React.Component {
                 <div className="section section-5">
                     <div className="row">
                         <div className="col-md-8 offset-md-2">
-                            <h1>Explore and Shop from Creative Marketplace</h1>
-                            <h3 className="m-b-md">TRENDING PRODUCTS</h3>
+                            <h1>Shop from Creative Marketplace</h1>
+                            <h3 className="m-b-md subtitle">TRENDING PRODUCTS</h3>
                             <div className="row m-b-sm">
                                 <div className="col-md-3">
                                     <img src={product1} alt="Product"/>                                                                            
@@ -107,20 +111,25 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="section section-6">
                     <h1>Meet Potential Clients and Get Hired</h1>
-                    <h3 className="m-b-md">TRENDING JOBS</h3>
+                    <h3 className="m-b-md subtitle">TRENDING JOBS</h3>
+                    <div className="row m-b-sm">
+                        <div className="col-md-3 job-card"></div>
+                        <div className="col-md-3 job-card"></div>
+                        <div className="col-md-3 job-card"></div>
+                        <div className="col-md-3 job-card"></div>
+                    </div>
                     <div className="row m-b-md">
-                        <div className="job-card m-b-xs"></div>
-                        <div className="job-card m-b-xs"></div>
-                        <div className="job-card m-b-xs"></div>
-                        <div className="job-card m-b-xs"></div>
-                        <div className="job-card m-b-xs"></div>
+                        <div className="col-md-3 job-card"></div>
+                        <div className="col-md-3 job-card"></div>
+                        <div className="col-md-3 job-card"></div>
+                        <div className="col-md-3 job-card"></div>
                     </div>
                     <button className="btn btn-outline-light btn-lg">View All Jobs</button>                                                                    
                 </div>
                 <div className="section section-7">
                     <h1>Havn't Done Any Works Yet? Relax!</h1>
-                    <h3 className="m-b-sm">Deepden's Academy will Guide You Step by Step to Reach Your Dream Destination</h3>
-                    <h2 className="m-b-md">SEE SOME OF THE LEARNING PATHS</h2>
+                    <h2 className="m-b-sm">Deepden's Academy will Guide You Step by Step to Reach Your Dream Destination</h2>
+                    <h3 className="m-b-md subtitle">SEE SOME OF THE LEARNING PATHS</h3>
                     <div className="row m-b-sm">
                         <div className="col-md-4 learning-path-card c1"></div>
                         <div className="col-md-4 learning-path-card c2"></div>
@@ -131,11 +140,11 @@ class LandingPage extends React.Component {
                         <div className="col-md-4 learning-path-card c5"></div>
                         <div className="col-md-4 learning-path-card c6"></div>
                     </div>
-                    <button className="btn btn-outline-info btn-lg">See All Learning Paths, Courses and Preperation Test</button>                                                                    
+                    <button className="btn btn-outline-info btn-lg">See All Learning Paths, Courses and Preperation Tests</button>                                                                    
                 </div>
                 <div className="section section-8">
                     <h1>....and there are lots of tools made by people like you to boost your professional carrier</h1>
-                    <h2 className="m-b-sm">Discover Add-ons</h2>
+                    <h2 className="m-b-sm">TRENDING ADD-ONS</h2>
                     <div className="row m-b-sm">
                         <div className="col-md-4 apps-card"></div>
                         <div className="col-md-4 apps-card"></div>
@@ -148,7 +157,7 @@ class LandingPage extends React.Component {
                     </div>
                     <button className="btn btn-outline-info btn-lg">View All Add-ons</button>                                                                    
                 </div>
-                <div className="section section-9">
+                <div className="section section-9" style={outroStyle}>
                     <h1 className="m-b-sm">Build Your Brand New Identity</h1>
                     <button className="btn btn-outline-secondary btn-lg">Join Now</button>                                        
                 </div>

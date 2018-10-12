@@ -42,7 +42,7 @@ class App extends React.Component {
                     </div>
                     <main className="app-main-content-wrapper">
                         <div className="app-main-content">
-                            <Route path={`${match.url}landing-page`} component={LandingPage}/>
+                            <Route path={`${match.url}home`} component={LandingPage}/>
                         </div>
                         <Footer/>
                     </main>
