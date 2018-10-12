@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {createMuiTheme, MuiThemeProvider} from 'material-ui/styles';
+import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 import {Redirect, Route, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import MainApp from 'app/index';
@@ -18,7 +18,14 @@ class App extends Component {
             return ( <Redirect to={'/home'}/> );
         }
         return (
-            <MuiThemeProvider theme={createMuiTheme(defaultTheme)}>
+            <MuiThemeProvider theme={
+                // createMuiTheme(defaultTheme)}
+                createMuiTheme({
+                    typography: {
+                      useNextVariants: true,
+                    },
+                  })}
+                >
                 <div className="app-main">
                     <Route path={`${match.url}`} component={MainApp}/>
                 </div>

@@ -6,7 +6,14 @@ import {toggleCollapsedNav} from 'actions/index';
 import Header from 'components/Header/index';
 import MenuBar from 'components/MenuBar/index';
 import Sidebar from 'containers/SideNav/index';
-import Footer from 'components/Footer';
+import PeopleList from 'components/People/index';
+import BrandList from 'components/Brands/index';
+import ProjectList from 'components/Projects/index';
+import ProductList from 'components/Products/index';
+import JobList from 'components/Jobs/index';
+import AcademyLanding from 'components/Academy/index';
+import AppList from 'components/Apps/index';
+import Footer from 'components/Footer/index';
 import LandingPage from './routes/LandingPage/index';
 import {isIOS, isMobile} from 'react-device-detect';
 
@@ -43,6 +50,13 @@ class App extends React.Component {
                     <main className="app-main-content-wrapper">
                         <div className="app-main-content">
                             <Route path={`${match.url}home`} component={LandingPage}/>
+                            <Route path={`${match.url}people`} component={PeopleList}/>
+                            <Route path={`${match.url}brands`} component={BrandList}/>
+                            <Route path={`${match.url}projects`} component={ProjectList}/>
+                            <Route path={`${match.url}products`} component={ProductList}/>
+                            <Route path={`${match.url}jobs`} component={JobList}/>
+                            <Route path={`${match.url}academy`} component={AcademyLanding}/>
+                            <Route path={`${match.url}apps`} component={AppList}/>
                         </div>
                         <Footer/>
                     </main>

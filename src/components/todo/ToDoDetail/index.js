@@ -1,11 +1,11 @@
 import React from 'react';
 import 'jquery-slimscroll/jquery.slimscroll.min';
-import IconButton from 'material-ui/IconButton'
-import Input from 'material-ui/Input'
-import Menu, {MenuItem} from 'material-ui/Menu';
-import Avatar from "material-ui/Avatar";
+import IconButton from '@material/core/IconButton'
+import Input from '@material/core/Input'
+import Menu, {MenuItem} from '@material/core/Menu';
+import Avatar from "@material/core/Avatar";
 import labels from "app/routes/todo/data/labels";
-import {DatePicker} from 'material-ui-pickers';
+import {DatePicker} from '@material/core-pickers';
 import users from 'app/routes/todo/data/users'
 import Moment from 'moment';
 import ConversationCell from "./ConversationCell";

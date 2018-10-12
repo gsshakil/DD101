@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from 'material-ui/Avatar'
-import Menu, {MenuItem} from 'material-ui/Menu';
+import Avatar from '@material-ui/core/Avatar'
+import Menu, {MenuItem} from '@material-ui/core/Menu';
 
 
 class UserInfo extends React.Component {

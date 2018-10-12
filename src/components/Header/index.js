@@ -1,7 +1,7 @@
 import React from 'react';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import IconButton from 'material-ui/IconButton';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
 import {Dropdown, DropdownMenu, DropdownToggle} from 'reactstrap';
 
 import {COLLAPSED_DRAWER, FIXED_DRAWER} from 'constants/ActionTypes';
@@ -12,6 +12,7 @@ import SwitchAccount from '../SwitchAccount/index';
 import AppNotification from '../AppNotification/index';
 import CardHeader from 'components/dashboard/Common/CardHeader/index';
 import logo from '../../../public/logo.png';
+import logo2 from '../../../public/logo2.png';
 
 class Header extends React.Component {
 
@@ -77,7 +78,7 @@ class Header extends React.Component {
                     </IconButton>
 
                     <a className="app-logo" href="#/">
-                        <img src={logo} alt="deepden" title="deepden"/>
+                        <img src={logo2} alt="deepden" title="deepden"/>
                     </a>
 
 

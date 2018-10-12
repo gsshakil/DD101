@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {withStyles} from 'material-ui/styles';
-import Card, {CardContent, CardMedia} from 'material-ui/Card';
-import IconButton from 'material-ui/IconButton';
-import Typography from 'material-ui/Typography';
-import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
-import PlayArrowIcon from 'material-ui-icons/PlayArrow';
-import SkipNextIcon from 'material-ui-icons/SkipNext';
+import {withStyles} from '@material-ui/core//styles';
+import Card, {CardContent, CardMedia} from '@material-ui/core//Card';
+import IconButton from '@material-ui/core//IconButton';
+import Typography from '@material-ui/core//Typography';
+import SkipPreviousIcon from '@material-ui/core/-icons/SkipPrevious';
+import PlayArrowIcon from '@material-ui/core/-icons/PlayArrow';
+import SkipNextIcon from '@material-ui/core/-icons/SkipNext';
 import styles from './style';
 
 function MediaControlCard(props) {

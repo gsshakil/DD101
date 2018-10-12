@@ -1,0 +1,122 @@
+.top-banner{
+    background-color: $headerColor;
+    height: 250px;
+    width: 100%;
+    left: 80px;
+    display: table;
+    text-align: center;
+    color: $accentPrimary;
+}
+
+.top-banner .content{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 350px;
+}
+
+.top-banner .content p{
+    color: rgb(100, 100, 100);
+}
+
+.list-wrapper{
+    
+}
+
+.filter-wrapper{
+    padding: 25px;
+    background-color: #f4f4f4;
+}
+
+.people-card-wrapper{
+    padding: 25px;
+}
+
+.occupation-filter{
+    margin: 25px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    height: 350px;
+    overflow: auto;
+}
+
+//==============People Card======================//
+
+.people-card{
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.people-card .content{
+    padding: 15px;
+}
+
+.people-card .avatar{
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.people-card .avatar img{
+    width: 75%;
+    border-radius: 50%;    
+}
+
+.people-card .user-info{
+    color: #111;
+}
+
+.people-card .user-info .name{
+    color: $accentPrimary;
+}
+
+.people-card .user-info .occupation{
+    color: #111;
+}
+
+.people-card .user-info .location{
+    margin-top: -10px;
+    font-size: 11px;
+    color: #999;
+}
+
+.people-card .bio{
+    color: #777;
+}
+
+.people-card .skills{
+
+}
+
+.people-card .skills ul{
+    padding: 0;
+}
+
+.people-card .skills ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+
+.people-card .sample-works{
+    padding: 0;
+    border-top: 1px solid #ddd;
+}
+
+.people-card .sample-works ul{
+    padding: 5px 0;
+    margin: 0;
+}
+
+.people-card .sample-works ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    width: 30%;
+}
+
+.people-card .sample-works ul li img{
+    width: 100%;
+}
