@@ -21,6 +21,10 @@ body.ios-mobile-view-height {
   overflow: visible !important;
 }
 
+img{
+  max-width: 100%;
+}
+
 .ripple-effect {
   @extend %ripple-effect;
 }
@@ -74,7 +78,7 @@ body.ios-mobile-view-height {
 }
 
 div[tabindex="-1"] {
-  z-index: 1500 !important;
+  z-index: 99999 !important;
 }
 
 .col-with-divider div[class*="col-"] {

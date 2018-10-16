@@ -1,50 +1,70 @@
-import React from 'react';;
-import avatar1 from '../../../public/avatar1.png';
+import React from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import ProductDetails from './ProductDetails';
+import product1 from '../../../public/product1.png';
+import product2 from '../../../public/product2.png';
+import product3 from '../../../public/product2.png';
 
 class ProductCard extends React.Component  {
-    render (){        
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            modal: false
+        };
+
+        this.toggle = this.toggle.bind(this);
+    }
+    
+    toggle() {
+        this.setState({
+            modal: !this.state.modal
+        });
+    }
+
+    render (){   
         return(
-            <div className="people-card">
-                <div className="content">
-                    <div className="avatar">
-                        <img src={avatar1} alt=""/>
-                    </div>
-                    <div className="user-info">
-                        <h2 className="name">Jhon Doe</h2>
-                        <p className="occupation">Architect, Serial Enterprenur</p>
-                        <p className="location">Dhaka, Bangladesh</p>
-                    </div>
-                    <div className="bio">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
-                    </div>
-                    {/* <div className="skills">
-                        <ul className="list-inline">
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                            <li>skill</li>
-                        </ul>
-                    </div> */}
+            <div className="product-card">
+                <div className="single-product">
+                    <div className="product-img">
+                        <span className="hot-sale">-13%</span>
+                        <a href="">
+                            <img className="primary-img" alt="" src={product1}/>
+                        </a>
+                        <div className="product-cart product-cart-res">
+                            <ul>
+                                <li><a><i className="zmdi zmdi-shopping-cart infinite wobble"></i></a></li>
+                                <li><a onClick={this.toggle}><i className="zmdi zmdi-eye infinite wobble"></i></a></li>
+                            </ul>
+                        </div>
+                        <div className="ratings">
+                            <ul>
+                                <li><i className="zmdi zmdi-star infinite wobble"></i></li>
+                                <li><i className="zmdi zmdi-star infinite wobble"></i></li>
+                                <li><i className="zmdi zmdi-star infinite wobble"></i></li>
+                                <li><i className="zmdi zmdi-star infinite wobble"></i></li>
+                                <li><i className="zmdi zmdi-star infinite wobble"></i></li>
+                            </ul>
+                        </div>
+                    </div>	
+                    <div className="tab-desc">
+                        <h2 className="product-name"><a title="" href="#">geistu boy est</a></h2>
+                        <div className="price-box">
+                            <p className="old-price">
+                                <span className="price">$690.00</span>
+                            </p>
+                            <p className="special-price s-one">
+                                <span className="price">$800.00</span>
+                            </p> 										
+                        </div>
+                    </div>											
                 </div>
-                {/* <div className="sample-works">
-                    <ul className="list-inline">
-                        <li><img src={avatar1} alt=""/></li>
-                        <li><img src={avatar1} alt=""/></li>
-                        <li><img src={avatar1} alt=""/></li>
-                    </ul>
-                </div> */}
-                <div className="button-group">
-                    <ul>
-                        <li><button className="btn btn-outline-info btn-lg">Connect</button></li>
-                        <li><button className="btn btn-outline-success btn-lg">Message</button></li>
-                    </ul>
-                </div>
+                <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                    <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+                    <ModalBody>
+                        <ProductDetails></ProductDetails>
+                    </ModalBody>
+                </Modal>
             </div>
         );
     }    
