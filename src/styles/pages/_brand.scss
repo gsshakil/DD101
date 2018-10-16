@@ -1,0 +1,75 @@
+.brand-list .top-banner{
+    background-color: #fff;
+    color: $accentPrimary;
+    box-shadow: 0 0 5px 0 #111;
+}
+
+.brand-list .filter-wrapper{
+    background-color: #fff;
+    top: 3px;    
+}
+
+//==============Brand Card======================//
+
+.brand-card-wrapper {
+    padding: 25px;
+}
+
+.brand-card{
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 2px #ddd;
+    border-radius: 15px;
+}
+
+.brand-card .content{
+    padding: 15px;
+}
+
+
+.brand-card .avatar{
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.brand-card .avatar img{
+    width: 50%;
+    border-radius: 50%;    
+}
+
+.brand-card .user-info{
+    color: #111;
+}
+
+.brand-card .user-info .name{
+    color: $accentPrimary;
+}
+
+.brand-card .user-info .occupation{
+    color: rgb(187, 187, 187);
+}
+
+.brand-card .user-info .location{
+    margin-top: -10px;
+    font-size: 11px;
+    color: #999;
+}
+
+.brand-card .bio{
+    color: #777;
+}
+
+.brand-card .button-group{
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+}
+.brand-card .button-group ul{
+    padding: 0;
+    margin: 0;
+}
+.brand-card .button-group ul li{
+    display: inline-block;
+    margin-right: 15px;
+}

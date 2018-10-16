@@ -28,8 +28,8 @@ class LandingPage extends React.Component {
             <div className="app-wrapper">
                 <div className="section section-1" style={introStyle}>
                     <div className="content">
-                        <h1 className="heading">Welcome to Deepden</h1>
-                        <p className="m-b-sm">Deepden is a platform for the creative professionals. A canvas to showcase creative works, products to global audience and meeting potential clients and customers. Deepden intends to create a thriving ecosystem for the global creative industry to develop skill, carrier, entrepreneurship, business and network.</p>
+                        <h1 className="heading">Platform for the Creative Professionals and Organizations</h1>
+                        <p className="m-b-sm">A canvas to showcase creative works, products to global audience and meeting potential clients and customers. Deepden intends to create a thriving ecosystem for the global creative industry to develop skill, carrier, entrepreneurship, business and network.</p>
                         
                         <button className="btn btn-outline-info btn-lg">Learn More</button>                    
                     </div>
@@ -43,9 +43,24 @@ class LandingPage extends React.Component {
                         </div>
                         </div>
                         <div className="col-md-8 ccp">
-                        <div className="centered-content">
-                            <img src={projectShowcase} alt="Project Showcase"/>                        
-                        </div>
+                            {/* <div className="centered-content">
+                                <img src={projectShowcase} alt="Project Showcase"/>                        
+                            </div> */}
+                            <div className="trending-projects">
+                                {/* <h3 className="m-b-md subtitle">FEATURED PROJECTS</h3>                             */}
+                                <div className="row m-b-xs">
+                                    <div className="col-md-3 project-card-mini"></div>
+                                    <div className="col-md-3 project-card-mini"></div>
+                                    <div className="col-md-3 project-card-mini"></div>
+                                    <div className="col-md-3 project-card-mini"></div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-3 project-card-mini"></div>
+                                    <div className="col-md-3 project-card-mini"></div>
+                                    <div className="col-md-3 project-card-mini"></div>
+                                    <div className="col-md-3 project-card-mini"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,7 +94,7 @@ class LandingPage extends React.Component {
                             <h3 className="m-b-md subtitle">TRENDING PRODUCTS</h3>
                             <div className="row m-b-sm">
                                 <div className="col-md-3">
-                                    <img src={product1} alt="Product"/>                                                                            
+                                    <img src={product1} alt="Product"/>
                                 </div>
                                 <div className="col-md-3">
                                     <img src={product2} alt="Product"/>                                                                            
@@ -127,9 +142,9 @@ class LandingPage extends React.Component {
                     <button className="btn btn-outline-light btn-lg">View All Jobs</button>                                                                    
                 </div>
                 <div className="section section-7">
-                    <h1>Havn't Done Any Works Yet? Relax!</h1>
-                    <h2 className="m-b-sm">Deepden's Academy will Guide You Step by Step to Reach Your Dream Destination</h2>
-                    <h3 className="m-b-md subtitle">SEE SOME OF THE LEARNING PATHS</h3>
+                    <h1>HAVN'T DONE ANY WORKS YET? RELAX!</h1>
+                    <h2 className="m-b-md">Deepden's Academy will Guide You Step by Step to Reach Your Dream Destination</h2>
+                    <h3 className="m-b-sm subtitle">SEE SOME OF THE LEARNING PATHS</h3>
                     <div className="row m-b-sm">
                         <div className="col-md-4 learning-path-card c1"></div>
                         <div className="col-md-4 learning-path-card c2"></div>
@@ -143,7 +158,7 @@ class LandingPage extends React.Component {
                     <button className="btn btn-outline-info btn-lg">See All Learning Paths, Courses and Preperation Tests</button>                                                                    
                 </div>
                 <div className="section section-8">
-                    <h1>....and there are lots of tools made by people like you to boost your professional carrier</h1>
+                    <h1 className="m-b-md">....and there are lots of tools made by people like you to boost your professional carrier</h1>
                     <h2 className="m-b-sm">TRENDING ADD-ONS</h2>
                     <div className="row m-b-sm">
                         <div className="col-md-4 apps-card"></div>

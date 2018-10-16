@@ -1,0 +1,52 @@
+List Cards
+Details
+Submit/Edit
+Account Settings
+Startup Wizard
+Auth Modal
+Brand Creation Wizard
+Instructor Creation Wizard 
+Admin(Pataton)
+    Dashboard
+    Authentication & Users CRUD
+    Posts CRUD(Different Types of Posts designed by Form Builder Plugin)
+    Form Builder/Post Creator/Restify/Clientica
+        inputs
+        file uploaders
+        payment methods
+        social sharing
+        social networking
+        ecommerce modules
+        messaging
+        bot
+        AI
+        IoT
+        Email Templates and backend 
+        Sms Templates and System
+        push notification
+        REST Api
+    Themes
+    Plugins
+    Editor (Code/Visual)
+        built in code editor
+        frontend component library/shortcode Plugin code+visual
+            component (Styles, Properties, data, behavior, events)
+            slider/carousel
+            tab
+            Accordion
+            menu
+            drawer
+        visual composer
+            Edit Style Property with forms
+            Edit Layout
+            component library
+            animation library            
+        free subdomain
+        paid custom domain and DevOps/PaaS
+        30 days free trial
+        documantation
+        marketplace(components, plugins, themes, tutorials)
+        development with command line
+        Corporate and Community version
+        connected with github
+                    

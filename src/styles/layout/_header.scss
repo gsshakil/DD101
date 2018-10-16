@@ -100,8 +100,29 @@
   }
 }
 
+.header-menu{
+  padding: 0;
+  margin: 0;
+}
+
+.header-menu li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.header-menu li a{
+  color: #ddd;
+  color: #a9a8a8;
+  font-size: 13px;
+}
+
+.header-menu li a:hover{
+  text-decoration: none;
+}
+
 .header-notifications {
   margin-bottom: 0;
+  margin-top: -20px;
 
   & li {
     vertical-align: middle;
@@ -375,7 +396,8 @@
   transition: .3s;
 }
 
-.menu-bar ul li a:hover{
+.menu-bar ul li a:hover,
+.menu-bar ul li a:active{
   background-color: #180f1b;
   color: #ddd;
   text-decoration: none;

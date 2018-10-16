@@ -1,0 +1,183 @@
+.masonry{
+    width: 100% !important;
+}
+
+.project-card{
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 24%;
+}
+
+@media only screen and (max-width: 768px) {
+    .project-card{
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .project-card{
+        width: 100%;
+    }
+}
+
+.project-card:hover{
+    cursor: pointer;
+}
+
+.project-card .content{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-card .content .avatar img{
+    width: 100%;
+}
+
+.project-card .content .card-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.project-card .content .card-content .inside-content{
+    padding: 10px 15px;    
+    display: table;
+    width: 100%;
+    height: 101%;
+    text-align: center;  
+    opacity: 0;  
+    background: rgba(0,0,0,.8);
+    color: #999;    
+    transition: .5s;
+}
+
+.project-card .content .card-content:hover > .inside-content{
+    opacity: 1;
+}
+
+
+.project-card .content .card-content .inside-content .centered-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.project-card .content .card-content h3{
+    color: $accentPrimary;
+}
+
+.project-card .content .card-content .by{
+    position: relative;
+    color: #999;
+}
+
+.project-card .content .card-content .by:hover{
+    cursor: pointer;
+}
+
+.project-card .content .card-content .by h4{
+    color: $accentPrimary;    
+}
+
+.project-card .content .card-content .by img{
+    border-radius: 15px 15px 0 0;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.project-card .content .card-content .categories{
+    padding: 0;
+    margin: 10px 0;
+}
+
+.project-card .content .card-content .categories li{
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #383838;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-card .content .card-content .categories li a{
+    padding: 0 10px;
+    color: #999;
+    display: block;
+    transition: .5s;
+}
+
+.project-card .content .card-content .categories li a:hover{
+    background-color: $accentPrimary;
+    color: #ddd;
+}
+
+.project-card .content .card-content .categories li a:hover{
+    text-decoration: none;
+}
+
+.project-card .content .card-content .date-time{
+    font-size: 11px;
+}
+
+.project-card .content .card-content .date-time i{
+    margin-right: 10px;
+}
+
+.project-card .project-card-footer{
+    padding: 0;
+    margin: 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.project-card .project-card-footer li{
+    color: #999;    
+    display: table-cell;
+    list-style: none;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project-card .project-card-footer li:first-child{
+    border-left: none;
+}
+
+.project-card .project-card-footer li a{
+    padding: 10px 15px;
+    display: block;
+    color: #999;
+    transition: .5s;
+}
+
+.project-card .project-card-footer li a:hover{
+    text-decoration: none;
+    background-color: $accentPrimary;
+    color: #fff;
+}
+
+.project-card .project-card-footer li i{
+    margin-right: 10px;
+}
+
+.project-card .project-card-footer li i.zmdi-favorite{
+    margin-right: 0;
+}
+
+.project-card .button-group{
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 15px;
+}
+.project-card .button-group ul{
+    padding: 0;
+    margin: 0;
+}
+.project-card .button-group ul li{
+    display: inline-block;
+    margin-right: 15px;
+}

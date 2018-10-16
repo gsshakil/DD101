@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import {Dropdown, DropdownMenu, DropdownToggle} from 'reactstrap';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import {COLLAPSED_DRAWER, FIXED_DRAWER} from 'constants/ActionTypes';
 import SearchBox from 'components/SearchBox';
@@ -85,6 +86,13 @@ class Header extends React.Component {
                     <SearchBox styleName="d-none d-sm-block" placeholder=""
                                onChange={this.updateSearchText.bind(this)}
                                value={this.state.searchText}/>
+                    
+                    <ul className="header-menu">
+                        <li><Link to="/">Post a Job</Link></li>
+                        <li><Link to="/">Create a Shop</Link></li>
+                        <li><Link to="/">Promote Business</Link></li>
+                        <li><Link to="/">Become an Instructor</Link></li>
+                    </ul>
 
                     <ul className="header-notifications list-inline ml-auto">
                         <li className="d-inline-block d-sm-none list-inline-item">

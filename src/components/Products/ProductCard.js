@@ -1,7 +1,7 @@
 import React from 'react';;
 import avatar1 from '../../../public/avatar1.png';
 
-class PeopleCard extends React.Component  {
+class ProductCard extends React.Component  {
     render (){        
         return(
             <div className="people-card">
@@ -50,5 +50,5 @@ class PeopleCard extends React.Component  {
     }    
 };
 
-export default PeopleCard;
+export default ProductCard;
 
