@@ -14,6 +14,7 @@ import JobList from 'components/Jobs/index';
 import AcademyLanding from 'components/Academy/index';
 import AppList from 'components/Apps/index';
 import Footer from 'components/Footer/index';
+import PeopleWizard from 'components/PeopleWizard/index';
 import LandingPage from './routes/LandingPage/index';
 import {isIOS, isMobile} from 'react-device-detect';
 
@@ -57,6 +58,7 @@ class App extends React.Component {
                             <Route path={`${match.url}jobs`} component={JobList}/>
                             <Route path={`${match.url}academy`} component={AcademyLanding}/>
                             <Route path={`${match.url}apps`} component={AppList}/>
+                            <Route path={`${match.url}people-wizard`} component={PeopleWizard}/>
                         </div>
                         <Footer/>
                     </main>
