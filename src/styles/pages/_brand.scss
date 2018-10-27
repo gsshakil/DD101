@@ -1,7 +1,15 @@
 .brand-list .top-banner{
-    background-color: #fff;
+    background-color: $accentPrimary;
     color: $accentPrimary;
     box-shadow: 0 0 5px 0 #111;
+}
+
+.brand-list .top-banner .content h1{
+    color: #fff;
+}
+
+.brand-list .top-banner .content p{
+    color: #ddd;
 }
 
 .brand-list .filter-wrapper{
@@ -40,6 +48,10 @@
 
 .brand-card .user-info{
     color: #111;
+}
+
+.brand-card .user-info a:hover{
+    text-decoration: none;
 }
 
 .brand-card .user-info .name{

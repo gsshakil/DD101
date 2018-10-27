@@ -18,7 +18,7 @@
     height: 100vh;
     display: table;
     text-align: center;
-    padding: 0px 300px;
+    padding: 0px 100px;
     color: rgb(78, 78, 78);    
 }
 
@@ -29,6 +29,10 @@
 .section-1 .content{
     display: table-cell;
     vertical-align: middle;
+}
+
+.section-1 .video-wrapper iframe{
+    padding: 100px;
 }
 
 .section-2{

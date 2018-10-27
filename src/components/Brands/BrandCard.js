@@ -1,4 +1,5 @@
-import React from 'react';;
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import avatar1 from '../../../public/brand1.png';
 
 class BrandCard extends React.Component  {
@@ -10,7 +11,7 @@ class BrandCard extends React.Component  {
                         <img src={avatar1} alt=""/>
                     </div>
                     <div className="user-info">
-                        <h2 className="name">Brand Name</h2>
+                        <Link to="/brand-details"><h2 className="name">Brand Name</h2></Link>
                         <p className="occupation">Industry</p>
                         <p className="location">Dhaka, Bangladesh</p>
                     </div>

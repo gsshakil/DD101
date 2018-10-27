@@ -1,0 +1,30 @@
+.news-feed{
+    padding: 50px;
+}
+.feed-card{
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+.feed-header{
+    padding: 25px;
+}
+.feed-content{
+    padding: 25px;
+}
+.feed-footer ul{
+    display: table;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.feed-footer ul li{
+    display: table-cell;
+    border-right: 1px solid #ddd;
+}
+.feed-footer ul li:last-child{
+    border-right: none;
+}
+.feed-footer ul li a{
+    padding: 8px 15px;
+    display: block;
+}

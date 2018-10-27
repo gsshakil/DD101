@@ -54,7 +54,7 @@
   max-height: $app-bar-height;
 
   & .search-bar {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: auto;
     max-width: 400px;
     width: 380px;
@@ -340,12 +340,70 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
+  padding: 0;
 }
 
 /* Individual item */
 .bm-item {
   display: inline-block;
+}
+
+/*Profile Menu Styles*/
+.bm-item-list{
+  width: 225% !important;
+  left: -123px !important;
+  text-align: center;
+}
+
+.bm-item-list .profile-menu .menu-items{
+  width: 100%;
+}
+
+.bm-item-list .profile-menu .menu-items li{
+  list-style: none;
+  border-bottom: 1px solid #222;
+}
+
+.bm-item-list .profile-menu .menu-items li:first-child{
+  border-top: 1px solid #222;
+}
+
+.bm-item-list .profile-menu .menu-items li a{
+  color: #777;
+  display: block;
+  padding: 6px 0;
+  transition: .5s;
+}
+
+.bm-item-list .profile-menu .menu-items li a:hover{
+  color: $accentPrimary;
+  text-decoration: none;
+}
+
+.profile-wrapper{
+
+}
+
+.profile-wrapper .profile-image{
+    width: 180px;
+    height: 180px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.profile-wrapper a{
+  color: $accentPrimary;
+}
+
+.profile-wrapper h1{
+  margin-bottom: 0;
+}
+
+.profile-wrapper small{
+ color: #555;
 }
 
 /* Styling of overlay */

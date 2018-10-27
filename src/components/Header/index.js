@@ -10,6 +10,7 @@ import SearchBox from 'components/SearchBox';
 import ProfileMenu from '../ProfileMenu/index';
 import MailNotification from '../MailNotification/index';
 import SwitchAccount from '../SwitchAccount/index';
+import Cart from '../Cart/index';
 import AppNotification from '../AppNotification/index';
 import CardHeader from 'components/dashboard/Common/CardHeader/index';
 import logo from '../../../public/logo.png';
@@ -27,6 +28,11 @@ class Header extends React.Component {
             switchAccount: !this.state.switchAccount
         })
     };
+    onCartSelect = () => {
+        this.setState({
+            cart: !this.state.cart
+        })
+    };
     onMailNotificationSelect = () => {
         this.setState({
             mailNotification: !this.state.mailNotification
@@ -39,7 +45,7 @@ class Header extends React.Component {
         })
     };
     handleRequestClose = () => {
-        this.setState({switchAccount:false, mailNotification: false, appNotification: false, searchBox: false});
+        this.setState({switchAccount:false, cart:false, mailNotification: false, appNotification: false, searchBox: false});
     };
 
     constructor() {
@@ -50,6 +56,7 @@ class Header extends React.Component {
             searchBox: false,
             searchText: '',
             switchAccount: false,
+            cart: false,
             mailNotification: false,
             appNotification: false,
         }
@@ -88,10 +95,10 @@ class Header extends React.Component {
                                value={this.state.searchText}/>
                     
                     <ul className="header-menu">
-                        <li><Link to="/">Post a Job</Link></li>
-                        <li><Link to="/">Create a Shop</Link></li>
-                        <li><Link to="/">Promote Business</Link></li>
-                        <li><Link to="/">Become an Instructor</Link></li>
+                        <li><Link to="/create-job">Post a Job</Link></li>
+                        <li><Link to="/create-shop">Create a Shop</Link></li>
+                        <li><Link to="/create-brand">Promote Business</Link></li>
+                        <li><Link to="/become-instructor">Become an Instructor</Link></li>
                     </ul>
 
                     <ul className="header-notifications list-inline ml-auto">
@@ -117,6 +124,13 @@ class Header extends React.Component {
                                 </DropdownMenu>
                             </Dropdown>
                         </li>
+                        <li className="list-inline-item">
+                            <Link to="/news-feed"><IconButton className="icon-btn size-30" aria-label="Menu">
+                                <i className="zmdi zmdi-home icon-profile-menu infinite wobble"/>
+                                <span className="menu-icon"/>
+                            </IconButton></Link>
+                            <ProfileMenu></ProfileMenu>
+                        </li>
                         <li className="list-inline-item switch-account">
                             <Dropdown
                                 className="quick-menu"
@@ -135,6 +149,27 @@ class Header extends React.Component {
                                 <DropdownMenu right>
                                     <CardHeader styleName="align-items-center" heading="SwitchAccount"/>
                                     <SwitchAccount/>
+                                </DropdownMenu>
+                            </Dropdown>
+                        </li>
+                        <li className="list-inline-item cart">
+                            <Dropdown
+                                className="quick-menu"
+                                isOpen={this.state.cart}
+                                toggle={this.onCartSelect.bind(this)}>
+
+                                <DropdownToggle
+                                    className="d-inline-block"
+                                    tag="span"
+                                    data-toggle="dropdown">
+                                    <IconButton className="icon-btn size-30">
+                                        <i className="zmdi zmdi-shopping-cart icon-alert infinite wobble"/>
+                                    </IconButton>
+                                </DropdownToggle>
+
+                                <DropdownMenu right>
+                                    <CardHeader styleName="align-items-center" heading="Cart"/>
+                                    <Cart/>
                                 </DropdownMenu>
                             </Dropdown>
                         </li>
@@ -191,9 +226,7 @@ class Header extends React.Component {
                                 <i className="zmdi zmdi-account-circle icon-profile-menu infinite wobble"/>
                                 <span className="menu-icon"/>
                             </IconButton>
-                            <ProfileMenu>
-                                Profie Menu 
-                            </ProfileMenu>
+                            <ProfileMenu></ProfileMenu>
                         </li>
 
                     </ul>

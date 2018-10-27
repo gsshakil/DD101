@@ -1,5 +1,18 @@
 import React from 'react';
+import YouTube from 'react-youtube';
+import MasonryInfiniteScroller from 'react-masonry-infinite';
+
 import ContainerHeader from 'components/ContainerHeader/index';
+import ProjectCard from '../../../components/projects/ProjectCard';
+
+import ProductCard from '../../../components/Products/ProductCard';
+
+
+import avatar from '../../../../public/avatar1.png';
+import projectImage1 from '../../../../public/project1.gif';
+import projectImage2 from '../../../../public/project2.jpg';
+
+
 import intro from '../../../../public/intro.png';
 import projectShowcase from '../../../../public/projectShowcase.png';
 import creativePeople from '../../../../public/creativePeople.png';
@@ -18,8 +31,31 @@ import endsec from '../../../../public/endsec.png';
 class LandingPage extends React.Component {
 
     render() {
+
+        let sizes = [{ columns: 4, gutter: 10 }, 
+            { mq: '360px', columns: 1, gutter: 0 }, 
+            { mq: '768px', columns: 3, gutter: 10 }, 
+            { mq: '1024px', columns: 4, gutter: 10 }
+        ]
+
+        const opts = {
+            height: '390',
+            width: '640',
+            playerVars: { // https://developers.google.com/youtube/player_parameters
+                autoplay: 0
+            }
+        };
+
         var introStyle = {
             backgroundImage: 'url(' + intro + ')',
+        };
+        var introStyle2 = {
+            textAlign: 'left',
+            marginTop: '100px',
+        };
+        var introStyle3 = {
+            display: 'table-cell',
+            verticalAlign: 'middle',
         };
         var outroStyle = {
             backgroundImage: 'url(' + endsec + ')',
@@ -27,11 +63,26 @@ class LandingPage extends React.Component {
         return (
             <div className="app-wrapper">
                 <div className="section section-1" style={introStyle}>
-                    <div className="content">
-                        <h1 className="heading">Platform for the Creative Professionals and Organizations</h1>
-                        <p className="m-b-sm">A canvas to showcase creative works, products to global audience and meeting potential clients and customers. Deepden intends to create a thriving ecosystem for the global creative industry to develop skill, carrier, entrepreneurship, business and network.</p>
-                        
-                        <button className="btn btn-outline-info btn-lg">Learn More</button>                    
+                    <div className="centered-content" style={introStyle3}>
+                        <div className="row">
+                            <div className="col-md-6" style={introStyle2}>
+                                <div className="content">
+                                    <h1 className="heading">Platform for the Creative Professionals and Organizations</h1>
+                                    <p className="m-b-sm">A canvas to showcase creative works, products to global audience and meeting potential clients and customers. Deepden intends to create a thriving ecosystem for the global creative industry to develop skill, carrier, entrepreneurship, business and network.</p>
+                                    
+                                    <button className="btn btn-outline-info btn-lg">Learn More</button>                    
+                                </div>                        
+                            </div>
+                            <div className="col-md-6">
+                                <div className="video-wrapper">
+                                    <YouTube
+                                        videoId="O_-naAO3uNA"
+                                        opts={opts}
+                                        onReady={this._onReady}
+                                    />
+                                </div>
+                            </div>
+                        </div>    
                     </div>
                 </div>
                 <div className="section section-2">
@@ -48,18 +99,16 @@ class LandingPage extends React.Component {
                             </div> */}
                             <div className="trending-projects">
                                 {/* <h3 className="m-b-md subtitle">FEATURED PROJECTS</h3>                             */}
-                                <div className="row m-b-xs">
-                                    <div className="col-md-3 project-card-mini"></div>
-                                    <div className="col-md-3 project-card-mini"></div>
-                                    <div className="col-md-3 project-card-mini"></div>
-                                    <div className="col-md-3 project-card-mini"></div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-3 project-card-mini"></div>
-                                    <div className="col-md-3 project-card-mini"></div>
-                                    <div className="col-md-3 project-card-mini"></div>
-                                    <div className="col-md-3 project-card-mini"></div>
-                                </div>
+                                <MasonryInfiniteScroller className = "masonry" sizes={sizes}>
+                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>                                    
+                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                                </MasonryInfiniteScroller>
                             </div>
                         </div>
                     </div>
@@ -92,32 +141,28 @@ class LandingPage extends React.Component {
                         <div className="col-md-8 offset-md-2">
                             <h1>Shop from Creative Marketplace</h1>
                             <h3 className="m-b-md subtitle">TRENDING PRODUCTS</h3>
-                            <div className="row m-b-sm">
-                                <div className="col-md-3">
-                                    <img src={product1} alt="Product"/>
+                            <div className="prduct-wrapper">
+                                <div className="row m-b-sm">
+                                    <div className="col-md-4">
+                                        <ProductCard></ProductCard>                                                            
+                                    </div>
+                                    <div className="col-md-4">
+                                        <ProductCard></ProductCard>                                                            
+                                    </div>
+                                    <div className="col-md-4">
+                                        <ProductCard></ProductCard>                                                            
+                                    </div>
                                 </div>
-                                <div className="col-md-3">
-                                    <img src={product2} alt="Product"/>                                                                            
-                                </div>
-                                <div className="col-md-3">
-                                    <img src={product3} alt="Product"/>                                                                            
-                                </div>
-                                <div className="col-md-3">
-                                    <img src={product4} alt="Product"/>                                                                            
-                                </div>
-                            </div>
-                            <div className="row m-b-md">
-                                <div className="col-md-3 p-b-sm">
-                                    <img src={product5} alt="Product"/>                                                                            
-                                </div>
-                                <div className="col-md-3 p-b-sm">
-                                    <img src={product6} alt="Product"/>                                                                            
-                                </div>
-                                <div className="col-md-3 p-b-sm">
-                                    <img src={product7} alt="Product"/>                                                                            
-                                </div>
-                                <div className="col-md-3 p-b-sm">
-                                    <img src={product8} alt="Product"/>                                                                            
+                                <div className="row m-b-sm">
+                                    <div className="col-md-4">
+                                        <ProductCard></ProductCard>                                                            
+                                    </div>
+                                    <div className="col-md-4">
+                                        <ProductCard></ProductCard>                                                            
+                                    </div>
+                                    <div className="col-md-4">
+                                        <ProductCard></ProductCard>                                                            
+                                    </div>
                                 </div>
                             </div>
                             <button className="btn btn-outline-light btn-lg">View All Products</button>                                                

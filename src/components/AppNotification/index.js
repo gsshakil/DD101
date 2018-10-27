@@ -1,4 +1,6 @@
 import React from 'react';
+import NotificationItem from "./NotificationItem";
+import {notifications} from "./data";
 
 const AppNotification = () => {
     $('.messages-list').slimscroll({
@@ -6,9 +8,10 @@ const AppNotification = () => {
     });
     return (
         <div className="messages-list">
-            <div className="d-flex align-items-center h-100 justify-content-center">
-                No notifications as of now!
-            </div>
+            <ul className="list-unstyled">
+                {notifications.map((notification, index) => <NotificationItem key={index} notification={notification}/>)
+                }
+            </ul>
         </div>
     )
 };

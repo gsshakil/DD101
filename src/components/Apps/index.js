@@ -1,5 +1,8 @@
 import React from 'react';
 
+import AppCard from './AppCard';
+import PeopleFilter from '../Common/Peoplefilter';
+
 const AppList = () => {
     return (
         <div className="app-list">
@@ -10,7 +13,25 @@ const AppList = () => {
                     <button className="btn btn-outline-light btn-lg">Become a Developer</button>                    
                 </div>
             </div>
-        </div>
+            <div className="row">
+                <div className="col-md-3">
+                    <div className="filter-wrapper p-r">
+                        <PeopleFilter></PeopleFilter>
+                    </div>
+                </div>
+                <div className="col-md-9">
+                    <div className="row">
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                        <div className="col-md-4 m-b-sm"><AppCard></AppCard></div>
+                    </div>
+                </div>
+            </div>
+        </div>            
     )
 };
 

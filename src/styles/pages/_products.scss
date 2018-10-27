@@ -3,7 +3,8 @@
 /*----------------------------------------*/
 .product-card{
     border: 1px solid #ddd;
-    cursor: pointer;
+	cursor: pointer;
+	background-color: #fff;
 }
 .single-product{
 	position: relative;
@@ -2126,5 +2127,5 @@ input.radio {
 
 .modal-dialog{
     max-width: 70%;
-    margin: 70px auto;
+    margin: 30px auto;
 }
