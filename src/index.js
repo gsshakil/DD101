@@ -4,6 +4,20 @@ import {Provider} from 'react-redux';
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import configureStore from './store/index';
 
+import { ApolloProvider } from 'react-apollo';
+import { ApolloClient } from 'apollo-client';
+import { createHttpLink } from 'apollo-link-http';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+
+
+const httpLink = createHttpLink({
+    uri: 'http://localhost:4000'
+});
+  
+const client = new ApolloClient({
+    link: httpLink,
+    cache: new InMemoryCache()
+});
 
 const store = configureStore();
 
@@ -15,13 +29,15 @@ let render = () => {
     const App = require('./containers/App').default;
 
     ReactDOM.render(
-        <Provider store={store}>
-            <HashRouter basename="/">
-                <Switch>
-                    <Route path="/" component={App}/>
-                </Switch>
-            </HashRouter>
-        </Provider>,
+        <ApolloProvider client={client}>
+            <Provider store={store}>
+                <HashRouter basename="/">
+                    <Switch>
+                        <Route path="/" component={App}/>
+                    </Switch>
+                </HashRouter>
+            </Provider>,
+        </ApolloProvider>,        
         rootEl
     );
 };

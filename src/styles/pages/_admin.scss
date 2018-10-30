@@ -1,0 +1,50 @@
+.admin-header .topnav{}
+.admin-header .topnav ul{
+    background-color: #111;            
+    width: 100%;
+    text-align: center;    
+}
+.admin-header .topnav ul li{
+    display: inline-flex;
+    border-right: 1px solid #222;
+}
+
+.admin-header .topnav ul li a{
+    padding: 8px 15px;
+    display: block;
+    color: #ddd;
+    transition: .5s;
+}
+
+.admin-header .topnav ul li a:hover{
+    background-color: $accentPrimary;
+    text-decoration: none;
+}
+
+.admin-header .sidenav{}
+.admin-header .sidenav ul{
+    background-color: #111;
+    float: left;            
+    width: 120px;
+    height: 100%;
+    text-align: center;
+}
+.admin-header .sidenav ul li{
+    border-bottom: 1px solid #222;
+}
+
+.admin-header .sidenav ul li:first-child{
+    border-top: 1px solid #222;
+}
+
+.admin-header .sidenav ul li a{
+    padding: 8px 15px;
+    display: block;
+    color: #ddd;
+    transition: .5s;
+}
+
+.admin-header .sidenav ul li a:hover{
+    background-color: $accentPrimary;
+    text-decoration: none;
+}

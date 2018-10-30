@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import avatar1 from '../../../public/avatar1.png';
-import feed1 from '../../../public/avatar1.png';
+import feed1 from '../../../public/feed1.jpg';
 
 class NewsFeed extends React.Component{
     render(){
@@ -18,7 +18,6 @@ class NewsFeed extends React.Component{
                                 <Link to="">Jhon Doe</Link> posted a new Project.
                                 <small>29 Oct, 2018 12:10 PM</small>
                             </div>
-                            <hr/>
                             <div className="feed content">
                                 <img src={feed1} alt=""/>
                             </div>

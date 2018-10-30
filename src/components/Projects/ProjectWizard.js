@@ -40,7 +40,7 @@ function getStepContent(stepIndex) {
   }
 }
 
-class PeopleWizard extends React.Component {
+class ProjectWizard extends React.Component {
   state = {
     activeStep: 0,
   };
@@ -132,8 +132,8 @@ class PeopleWizard extends React.Component {
   }
 }
 
-PeopleWizard.propTypes = {
+ProjectWizard.propTypes = {
   classes: PropTypes.object,
 };
 
-export default withStyles(styles)(PeopleWizard);
+export default withStyles(styles)(ProjectWizard);

@@ -9,7 +9,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import Checkbox from '@material-ui/core/Checkbox';
 
-class CourseWizardStep2 extends React.Component {
+class CourseWizardStep1
+ extends React.Component {
     
     render(){
         const TextFieldStyele={
@@ -49,4 +50,5 @@ class CourseWizardStep2 extends React.Component {
     }
 }
   
-export default CourseWizardStep2;
+export default CourseWizardStep1
+;

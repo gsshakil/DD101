@@ -51,7 +51,7 @@ class ProjectCard extends React.Component {
                     <li><a href=""><i className="zmdi zmdi-comments infinite wobble"></i> {this.props.commentCount}</a></li>
                     <li><a href=""><i className="zmdi zmdi-eye infinite wobble"></i> {this.props.viewCount}</a></li>
                 </ul>
-                <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                <Modal className="project-detail-modal" isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>                        
                         <div className="byAvatar">
                             <img src={this.props.byAvatar} alt=""/>

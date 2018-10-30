@@ -35,6 +35,12 @@ import InstructorWizard from 'components/Academy/InstructorWizard';
 import AccountSettings from 'components/AccountSettings/index';
 import NewsFeed from 'components/NewsFeed/index';
 import ChatBox from 'components/ChatBox/index';
+import Login from 'components/Auth/Login';
+import Signup from 'components/Auth/Signup';
+
+import Dashboard from 'components/Admin/Dashboard';
+import Users from 'components/Admin/Users';
+
 import LandingPage from './routes/LandingPage/index';
 import {isIOS, isMobile} from 'react-device-detect';
 
@@ -99,6 +105,11 @@ class App extends React.Component {
                             <Route path={`${match.url}account-settings`} component={AccountSettings}/>
                             <Route path={`${match.url}news-feed`} component={NewsFeed}/>
                             <Route path={`${match.url}chatbox`} component={ChatBox}/>
+                            <Route path={`${match.url}login`} component={Login}/>
+                            <Route path={`${match.url}signup`} component={Signup}/>
+   
+                            <Route path={`${match.url}admin/dashboard`} component={Dashboard}/>
+                            <Route path={`${match.url}admin/users`} component={Users}/>
                         </div>
                         <Footer/>
                     </main>

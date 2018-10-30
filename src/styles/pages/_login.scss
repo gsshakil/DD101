@@ -30,3 +30,19 @@
 }
 
 .login-content .btn, .login-content .jr-btn { padding: 10px 35px !important;  }
+
+.social-auth li{
+  list-style: none;
+  margin-bottom: 6px;
+}
+.social-auth li a{
+  padding: 8px 25px;
+  display: block;
+  color: #ddd;
+}
+.social-auth li a.facebook{
+  background-color: rgb(32, 32, 158);
+}
+.social-auth li a.google{
+  background-color: rgb(134, 34, 34);
+}
