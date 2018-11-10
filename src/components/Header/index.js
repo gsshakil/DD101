@@ -226,7 +226,6 @@ class Header extends React.Component {
                                 <i className="zmdi zmdi-account-circle icon-profile-menu infinite wobble"/>
                                 <span className="menu-icon"/>
                             </IconButton>
-                            <ProfileMenu></ProfileMenu>
                         </li>
 
                     </ul>

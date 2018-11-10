@@ -12,6 +12,7 @@ import PeopleList from 'components/People/index';
 import PeopleDetails from 'components/People/PeopleDetails';
 import BrandList from 'components/Brands/index';
 import BrandDetails from 'components/Brands/BrandDetails';
+import ConnectBrand from 'components/Brands/ConnectBrand';
 import ProjectList from 'components/Projects/index';
 import ProductList from 'components/Products/index';
 import JobList from 'components/Jobs/index';
@@ -82,6 +83,7 @@ class App extends React.Component {
                             <Route path={`${match.url}people-wizard`} component={PeopleWizard}/>                            
                             <Route path={`${match.url}brands`} component={BrandList}/>
                             <Route path={`${match.url}brand-details`} component={BrandDetails}/>
+                            <Route path={`${match.url}connect-brand`} component={ConnectBrand}/>
                             <Route path={`${match.url}projects`} component={ProjectList}/>
                             <Route path={`${match.url}create-project`} component={ProjectWizard}/>
                             <Route path={`${match.url}products`} component={ProductList}/>

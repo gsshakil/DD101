@@ -153,6 +153,7 @@ class BrandDetails extends React.Component {
                                 <Tab label="Projects" />
                                 <Tab label="Products" />
                                 <Tab label="Network" />
+                                <Tab label="Team" />
                                 <Tab label="Favorites" />
                                 <Tab label="Jobs" />
                                 <Tab label="Academy" />
@@ -210,8 +211,9 @@ class BrandDetails extends React.Component {
                                     <TopicsFollowing></TopicsFollowing>
                                 </TabContainer>}
                             </TabContainer>}
-                            {value === 3 && <TabContainer>Item Four</TabContainer>}
-                            {value === 4 && <TabContainer>
+                            {value === 3 && <TabContainer>Team</TabContainer>}
+                            {value === 4 && <TabContainer>Favorites</TabContainer>}
+                            {value === 5 && <TabContainer>
                                 <AppBar position="static" color="default">
                                     <Tabs
                                         value={valueSeacondaryTabsJobs}
@@ -250,7 +252,7 @@ class BrandDetails extends React.Component {
                                     </div>
                                 </TabContainer>}
                             </TabContainer>}
-                            {value === 5 && <TabContainer>
+                            {value === 6 && <TabContainer>
                                 <AppBar position="static" color="default">
                                     <Tabs
                                         value={valueSeacondaryTabsAcademy}
@@ -295,7 +297,7 @@ class BrandDetails extends React.Component {
                                     </div>
                                 </TabContainer>}
                             </TabContainer>}
-                            {value === 6 && <TabContainer>
+                            {value === 7 && <TabContainer>
                                 <div className="row">
                                     <div className="col-md-4"><AppCard></AppCard></div>
                                     <div className="col-md-4"><AppCard></AppCard></div>

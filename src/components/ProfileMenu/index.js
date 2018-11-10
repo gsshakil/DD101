@@ -32,13 +32,13 @@ class ProfileMenu extends React.Component {
                         <hr/>
                         <div className="d-flex align-items-center h-100 justify-content-center">
                             <ul className="menu-items">
-                                <li><Link to="" onClick={onToggleProfileMenu}>Dashboard</Link></li>
-                                <li><Link to="" onClick={onToggleProfileMenu}>View Profile</Link></li>
-                                <li><Link to="" onClick={onToggleProfileMenu}>Edit Profile</Link></li>
-                                <li><Link to="" onClick={onToggleProfileMenu}>Create/Connect Brands</Link></li>
-                                <li><Link to="" onClick={onToggleProfileMenu}>Post a Job</Link></li>
-                                <li><Link to="" onClick={onToggleProfileMenu}>Create a Shop</Link></li>
-                                <li><Link to="" onClick={onToggleProfileMenu}>Become an Instructor</Link></li>
+                                <li><Link to="/admin/dashboard" onClick={onToggleProfileMenu}>Dashboard</Link></li>
+                                <li><Link to="/userprofile" onClick={onToggleProfileMenu}>View Profile</Link></li>
+                                <li><Link to="edit-profile" onClick={onToggleProfileMenu}>Edit Profile</Link></li>
+                                <li><Link to="connect-brand" onClick={onToggleProfileMenu}>Create/Connect Brands</Link></li>
+                                <li><Link to="create-job" onClick={onToggleProfileMenu}>Post a Job</Link></li>
+                                <li><Link to="create-shop" onClick={onToggleProfileMenu}>Create a Shop</Link></li>
+                                <li><Link to="/become-instructor" onClick={onToggleProfileMenu}>Become an Instructor</Link></li>
                                 <li><Link to="/account-settings" onClick={onToggleProfileMenu}>Account Settings</Link></li>
                                 <li><Link to="">Log Out</Link></li>
                             </ul>
