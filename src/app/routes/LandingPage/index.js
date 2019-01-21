@@ -74,44 +74,44 @@ class LandingPage extends React.Component {
                                 </div>                        
                             </div>
                             <div className="col-md-6">
-                                <div className="video-wrapper">
-                                    <YouTube
-                                        videoId="O_-naAO3uNA"
-                                        opts={opts}
-                                        onReady={this._onReady}
-                                    />
-                                </div>
+                                <div className="auth-wrapper">
+                                    <h1>Join Now</h1>
+                                    <hr/>
+                                    <form>
+                                        <div className="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div className="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                        </div>
+                                        <button type="submit" className="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>                    
                             </div>
                         </div>    
                     </div>
                 </div>
                 <div className="section section-2">
-                    <div className="row">
-                        <div className="col-md-4 ccp">
-                        <div className="centered-content">
-                            <h1 className="m-b-sm">Organize and Showcase Your Creative Projects Like Never Before</h1> 
-                            <button className="btn btn-outline-info btn-lg">Upload Works</button>                                                                       
-                        </div>
-                        </div>
-                        <div className="col-md-8 ccp">
-                            {/* <div className="centered-content">
-                                <img src={projectShowcase} alt="Project Showcase"/>                        
-                            </div> */}
-                            <div className="trending-projects">
-                                {/* <h3 className="m-b-md subtitle">FEATURED PROJECTS</h3>                             */}
-                                <MasonryInfiniteScroller className = "masonry" sizes={sizes}>
-                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>                                    
-                                    <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                    <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
-                                </MasonryInfiniteScroller>
-                            </div>
-                        </div>
+                    <div className="heading-style-1">
+                        <h1 className="m-b-sm">Organize and Showcase Your Creative Projects</h1> 
                     </div>
+                    <div className="trending-projects">
+                        <h3 className="m-b-md subtitle">FEATURED PROJECTS</h3>                            
+                        <MasonryInfiniteScroller className = "masonry" sizes={sizes}>
+                            <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                            <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                            <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                            <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                            <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>                                    
+                            <ProjectCard projectImage={projectImage2} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                            <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                            <ProjectCard projectImage={projectImage1} projectTitle="lorem ipsam dollor dan can firea ovita lijoyt munn to....." byAvatar={avatar} byUserName="Jhon Doe" category="categry" dateTime="August 20, 2019 12:39 PM" commentCount="255"></ProjectCard>
+                        </MasonryInfiniteScroller>
+                    </div>
+                    <button className="btn btn-outline-info btn-lg">View All</button>                                                                       
                 </div>
                 <div className="section section-3">
                     <div className="row">

@@ -13,7 +13,6 @@ import SwitchAccount from '../SwitchAccount/index';
 import Cart from '../Cart/index';
 import AppNotification from '../AppNotification/index';
 import CardHeader from 'components/dashboard/Common/CardHeader/index';
-import logo from '../../../public/logo.png';
 import logo2 from '../../../public/logo2.png';
 
 class Header extends React.Component {

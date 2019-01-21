@@ -17,7 +17,6 @@
     background-color: #111;
     height: 100vh;
     display: table;
-    text-align: center;
     padding: 0px 100px;
     color: rgb(78, 78, 78);    
 }
@@ -35,24 +34,24 @@
     padding: 100px;
 }
 
+.auth-wrapper{
+    padding: 0 50px;
+}
+
+
 .section-2{
     background-color: #ffffff;
-    padding: 0px;
+    padding: 50px;
+    text-align: center;
 }
 
-.section-2 h1{
-    margin: 100px;
-    margin-top: 220px;
-    margin-bottom: 25px;
-}
-
-.section-2 button{
-    margin-left: 100px;
+.section-2 .heading-style-1{
+    text-align: center;
+    padding: 50px 0 0;
 }
 
 .section-2 .trending-projects{
-    text-align: center;;
-    padding: 80px 50px 80px 25px;
+    padding: 0 10% 50px;
 }
 
 .section-2 .trending-projects .subtitle{
