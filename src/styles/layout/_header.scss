@@ -478,3 +478,15 @@
   color: #ddd;
   margin-bottom: 8px;
 }
+
+.messages-list ul{
+  width: 100%;
+}
+
+.messages-list ul li img{
+  height: 64px;
+  width: 64px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}

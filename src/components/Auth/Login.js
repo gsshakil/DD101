@@ -27,8 +27,16 @@ class Login extends React.Component{
                 <div className="col-md-4 offset-md-4 m-t-md text-center">
                     <h2 className="mv3">Login</h2>
                     <ul className="social-auth">
-                        <li><a href='' className='facebook' onClick=''><i className='zmdi zmdi-facebook'></i> Facebook </a></li>
-                        <li><a href='' className='google' onClick=''><i className='zmdi zmdi-google'></i> Google </a></li>
+                        <div className="form-group">
+                            <a class="btn btn-block btn-social btn-facebook">
+                                <span class="zmdi zmdi-facebook"></span> Sign in with Facebook
+                            </a>
+                        </div>
+                        <div className="form-group">
+                            <a class="btn btn-block btn-social btn-google">
+                                <span class="zmdi zmdi-google"></span> Sign in with Google
+                            </a>
+                        </div>
                     </ul>
                     <div className="flex flex-column">
                         <input
