@@ -51,7 +51,7 @@ class LandingPage extends React.Component {
         };
         var introStyle2 = {
             textAlign: 'left',
-            marginTop: '100px',
+            marginTop: '100px'
         };
         var introStyle3 = {
             display: 'table-cell',
@@ -75,19 +75,30 @@ class LandingPage extends React.Component {
                             </div>
                             <div className="col-md-6">
                                 <div className="auth-wrapper">
-                                    <h1>Join Now</h1>
-                                    <hr/>
                                     <form>
+                                        <div className="form-group">
+                                            <a class="btn btn-block btn-social btn-facebook">
+                                                <span class="zmdi zmdi-facebook"></span> Sign in with Facebook
+                                            </a>
+                                        </div>
+                                        <div className="form-group">
+                                            <a class="btn btn-block btn-social btn-google">
+                                                <span class="zmdi zmdi-google"></span> Sign in with Google
+                                            </a>
+                                        </div>
                                         <div className="form-group">
                                             <label for="exampleInputEmail1">Email address</label>
                                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                                         </div>
                                         <div className="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                            <label for="password">Password</label>
+                                            <input type="password" className="form-control" id="password" placeholder="Password" />
                                         </div>
-                                        <button type="submit" className="btn btn-primary">Submit</button>
+                                        <div className="form-group">
+                                            <label for="confirmPassword">Confirm Password</label>
+                                            <input type="password" className="form-control" id="confirmPassword" placeholder="Password" />
+                                        </div>
+                                        <button type="submit" className="btn btn-primary btn-block">Join</button>
                                     </form>
                                 </div>                    
                             </div>
