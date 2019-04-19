@@ -8,7 +8,7 @@ import Tab from '@material-ui/core/Tab';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Typography from '@material-ui/core/Typography';
 
-import PeopleFilter from '../common/Peoplefilter';
+import PeopleFilter from '../Common/Peoplefilter';
 import LearningPathCard from './LearningPathCard';
 import CourseCard from './CourseCard';
 import TestCard from './TestCard';
