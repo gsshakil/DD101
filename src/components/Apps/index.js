@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AppCard from './AppCard';
-import PeopleFilter from '../Common/Peoplefilter';
+import PeopleFilter from '../Common/PeopleFilter';
 
 const AppList = () => {
     return (

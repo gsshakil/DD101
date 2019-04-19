@@ -1,7 +1,7 @@
 import React from 'react';
 import MasonryInfiniteScroller from 'react-masonry-infinite';
 
-import PeopleFilter from '../Common/Peoplefilter';
+import PeopleFilter from '../Common/PeopleFilter';
 import ProjectCard from './ProjectCard';
 
 import avatar from '../../../public/avatar1.png';
