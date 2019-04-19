@@ -49,7 +49,7 @@ class WebpackDistConfig extends WebpackBaseConfig {
                     {from: root('public/favicon.ico'), to: root('dist/')},
                     {from: root('public/logo.png'), to: root('dist/')},
                     {from: root('public/vendors'), to: root('dist/vendors')},
-                    {from: root('src/assets/images'), to: root('dist/assets/images')},
+                    //{from: root('src/assets/images'), to: root('dist/assets/images'), },
                 ]),
             ]
         };

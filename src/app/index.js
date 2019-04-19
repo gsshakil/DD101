@@ -6,7 +6,7 @@ import {toggleCollapsedNav} from 'actions/index';
 import Header from 'components/Header/index';
 import MenuBar from 'components/MenuBar/index';
 import Sidebar from 'containers/SideNav/index';
-import MyConnections from 'components/Common/Myconnections';
+import MyConnections from 'components/Common/MyConnections';
 import TopicsFollowing from 'components/Common/TopicsFollowing';
 import PeopleList from 'components/People/index';
 import PeopleDetails from 'components/People/PeopleDetails';

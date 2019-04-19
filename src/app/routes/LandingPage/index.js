@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 import MasonryInfiniteScroller from 'react-masonry-infinite';
 
 import ContainerHeader from 'components/ContainerHeader/index';
-import ProjectCard from '../../../components/projects/ProjectCard';
+import ProjectCard from '../../../components/Projects/ProjectCard';
 
 import ProductCard from '../../../components/Products/ProductCard';
 
