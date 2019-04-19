@@ -1,5 +1,5 @@
 import React from 'react';
-import PeopleFilter from '../Common/Peoplefilter';
+import PeopleFilter from '../common/Peoplefilter';
 import PeopleCard from './PeopleCard';
 
 const PeopleList = () => {
