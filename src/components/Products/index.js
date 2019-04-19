@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import PeopleFilter from '../Common/Peoplefilter';
+import PeopleFilter from '../Common/PeopleFilter';
 import ProductCard from './ProductCard';
 
 const ProductList = () => {
